@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Videojuegos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        .navbar {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        .navbar li {
+            margin-left: 20px;
+        }
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1em;
+            transition: color 0.3s;
+        }
+        .navbar a:hover {
+            color: #e4b20f;
+        }
+        .container {
+            width: 90%;
+            margin: 20px auto;
+        }
+        .card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+            width: 30%;
+            margin: 15px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .card img {
+            width: 100%;
+            height: 300px;
+        }
+        .card-content {
+            padding: 15px;
+            text-align: center;
+        }
+        .card-title {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+        .card-description {
+            font-size: 0.9em;
+            color: #555;
+            margin-bottom: 15px;
+
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .button{
+            display: inline-block;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            padding: 10px 20px;
+            color: rgb(255, 255, 255);
+            background-color: rgb(42, 112, 145);
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            transition: background-color 0.2s ease;
+            
+        }
+        .button:hover {
+            background-color: #e4b20f;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Tienda de Videojuegos</div>
+            <ul class="navbar">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Consolas</a></li>
+                <li><a href="#">Videojuegos</a></li>
+                <li><a href="#">Nosotros</a></li>
+            </ul>
+        </nav>    </header>
+    <div class="container">
+        <div class="card">
+            <img src="https://sm.ign.com/t/ign_es/review/g/god-of-war/god-of-war-ragnarok-performance-analysis_4a73.1200.jpg" alt="Videojuego 1">
+            <div class="card-content">
+                <h2 class="card-title">Videojuego 1</h2>
+                <p class="card-description">Good of war</p>
+                <button class="button">Comprar</button>
+
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://media.vandal.net/i/1080x1080/4-2023/202342320125115_1.jpg" alt="Videojuego 2">
+            <div class="card-content">
+                <h2 class="card-title">Videojuego 2</h2>
+                <p class="card-description">Resident Evil 2</p>
+                <button class="button">Comprar</button>
+
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2022/01/mario-kart-8-deluxe-2576865.jpg?tf=1200x900" alt="Videojuego 3">
+            <div class="card-content">
+                <h2 class="card-title">Videojuego 3</h2>
+                <p class="card-description">MarioKart8</p>
+                <button class="button">Comprar</button>
+
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://www.gamespot.com/a/uploads/original/mig/6/8/4/4/2286844-gtalogo-big_61199_screen.jpg" alt="Videojuego 1">
+            <div class="card-content">
+                <h2 class="card-title">Videojuego 4</h2>
+                <p class="card-description">GTA V</p>
+                <button class="button">Comprar</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZiNBvLpm5NVlPWZe1zPmYU1JvqaDbhKXJyw&s" alt="Videojuego 2">
+            <div class="card-content">
+                <h2 class="card-title">Videojuego 5</h2>
+                <p class="card-description">Splatoon 3</p>
+                <button class="button">Comprar</button>
+
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg7grfu6PXk4iIEC6LDk5lgtt21QmViXc8Rg&s" alt="Videojuego 3">
+            <div class="card-content">
+                <h2 class="card-title">Videojuego 6</h2>
+                <p class="card-description">PVZ</p>
+                <button class="button">Comprar</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
